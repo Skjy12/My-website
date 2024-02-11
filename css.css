@@ -1,0 +1,423 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Noto+Sans:wght@200&family=Open+Sans:wght@300&family=Poppins:ital,wght@0,300;1,300&family=Tinos:ital,wght@1,700&display=swap');
+
+:root{
+    --purple:#8B008B;
+    --black:#130f40;
+    --light-color:#666;
+    --box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
+    --border :.2rem solid rgba(0,0,0,.1);
+    --outline :.1rem solid rgba(0,0,0,.1);
+    --outline-hover :.2rem solid rgba(0,0,0,.1);
+}
+
+*{
+    font: 'Poppins',sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+}
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    -webkit-scroll-behavior: smooth;
+    scroll-behavior: smooth;  /* Corrected property name */
+    -webkit-scroll-behavior: smooth;  /* Vendor prefix for Safari */
+    scroll-padding-top: 7rem;
+
+}
+body{
+    background:whitesmoke;
+
+}
+.header{
+    position: fixed;
+    top: 0;left: 0;right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 9%;
+    box-shadow: var(--box-shadow);
+}
+.header .logo{
+    font-size: 2.5rem;
+    font-weight:bolder;
+    color: var(--black);
+}
+.header .logo i{
+    color: var(--purple);
+}
+
+.header .navbar a{
+    font-size: 1.7rem;
+    margin: 0 1rem;
+    color: var(--black);
+
+}
+.section{
+    padding: 2rem  9%;
+
+
+}
+.btn{
+    margin-top:1rem;
+    display: inline-block;
+    padding: 1rem 3rem;
+    font-size: 1.7rem;
+    border-radius: 45rem;
+    border: .2rem solid white;
+    columns: var(--black);
+    cursor: pointer;
+    background-color:rgb(37, 212, 37);
+    color: #100e0e;
+
+}
+.btn3
+{
+    position: absolute;
+    top: 45%; /* Adjust the value for desired vertical position */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 1rem;
+    display: inline-block;
+    padding: 1rem 3rem;
+    font-size: 1.7rem;
+    border-radius: 40rem;
+    border: .2rem solid #000; /* Black border */
+    cursor: pointer;
+    background-color: transparent; /* Transparent background */
+    color: #000;
+}
+.navbar a {
+    margin: 0 1rem;
+    color: var(--black);
+}
+
+.home {
+    display: flex;
+    flex-direction: column; /* Add this to stack the content vertically */
+    align-items: center;
+    justify-content: center;
+    background: url('Spinach.jpg') no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-top: 17rem;
+    padding-bottom: 10rem;
+    margin-top: 7rem; /* Adjust as needed to prevent overlap */
+}
+.home .content h1 {
+    font-weight: bold;
+    font-style: italic;
+    font-size: 4rem;
+    color: white;
+}
+
+.home1 {
+    display: flex;
+    flex-direction: column; /* Add this to stack the content vertically */
+    align-items: center;
+    justify-content: center;
+    background: url('Spinach.jpg') no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-top: 17rem;
+    padding-bottom: 10rem;
+    margin-top: 7rem; /* Adjust as needed to prevent overlap */
+}
+.home1 .content1 h1 {
+    font-weight: bold;
+    font-style: italic;
+    font-size: 4rem;
+    color: white;
+}
+
+/* Your existing CSS styles go here */
+.products {
+    margin: 0 auto;
+    max-width: 700px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-auto-rows: auto;
+    gap: 5px;
+    border-radius: 0px;
+    padding-top: 30px;
+}
+
+.products * {
+    box-sizing: border-box;
+}
+
+.card__image {
+    width: 50%;
+    height: 25%;
+    object-fit: cover;
+    display: block;
+    border-top: 2px solid #333333;
+    border-right: 2px solid #333333;
+    border-left: 2px solid #333333;
+}
+
+
+.card__content {
+    line-height: 1.5;
+    font-size: 0.9em;
+    padding: 15px;
+    background: #fafafa;
+    border-right: 2px solid #333333;
+    border-left: 2px solid #333333;
+}
+
+.card__content > p:first-of-type {
+    margin-top: 0;
+}
+
+.card__content > p:last-of-type {
+    margin-bottom: 0;
+}
+.card__content .btn {
+    align-self: flex-start; /* Align the button to the left inside the card */
+    padding: 8px 16px;
+    background-color: #333;
+    text-decoration: none;
+    border-radius: 30px;
+    color: #fff;
+}
+
+.veg-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    width: 80%;
+    max-width: 700px;
+    margin: 0 auto;
+    padding-top: 30px;
+}
+
+.veg {
+    min-width: 325px; /* Set a minimum width for the card */
+    min-height: 200px; /* Set a minimum height for the card */
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: var(--box-shadow);
+    cursor: pointer;
+    margin-bottom: 25px;
+    width: 100%; /* Ensure the card takes 100% width within its grid cell */
+}
+
+.veg-content {
+    padding: 30px;
+    line-height: 1.3;
+}
+
+.veg-content h2 {
+    font-size: 95px;
+    margin-bottom: 10px;
+    color: #000;
+}
+
+.veg-content p {
+    font-size: 17px;
+    margin-bottom: 20px;
+    color: var(--purple);
+}
+.veg-container1 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding-top: 30px;
+}
+
+
+.veg1 {
+    min-width: 325px; /* Set a minimum width for the card */
+    min-height: 200px; /* Set a minimum height for the card */
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    box-shadow: var(--box-shadow);
+    cursor: pointer;
+    margin-bottom: 25px;
+    width: 100%; /* Ensure the card takes 100% width within its grid cell */
+}
+
+.veg-content1 {
+    padding: 30px;
+    line-height: 1.3;
+}
+.veg-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.veg-content1 h2 {
+    font-size: 45px;
+    margin-bottom: 10px;
+    color: #000;
+}
+
+.veg-content1 p {
+    font-size: 17px;
+    margin-bottom: 20px;
+    color: var(--purple);
+}
+footer {
+    width: 100%;
+    position: absolute;
+    bottom: 100; /* Adjust the value as needed */
+    background-image: url('carrot.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover; /* Adjust as needed */
+    color: #171414;
+    padding: 100px 0 30px;
+   
+    font-size: 15px;
+    line-height: 20px;
+    backdrop-filter: blur(30px); /* Adjust the blur value as needed */
+    z-index: 1; /* Ensure the footer is on top of other content */
+}
+footer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: inherit;
+    filter: blur(10px); /* Adjust the blur value as needed */
+    z-index: -1; /* Place it behind the content */
+}
+
+.row {
+    width: 85%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.col {
+    flex-basis: 25%;
+    padding: 10px;
+}
+.col h3{
+    font-size: 18px;
+    font-weight: bold;
+    width: fit-content;
+    margin-bottom: 40px;
+    position: relative;
+
+}
+.form{
+    padding-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 50px;
+}
+.form .far{
+    font-size: 18px;
+    margin-right: 10px;
+}
+.input-box {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.input-box input {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    outline: none;
+}
+
+.input-box {
+    position: relative;
+    display: flex;
+}
+
+.input-box i {
+    margin-right: 0;
+    color: rgb(31, 31, 27);
+    background-color: yellow;
+    padding: 19px; /* Adjust padding as needed */
+    border-radius: 10 8px 4px 0; /* Adjust border-radius for a square shape */
+}
+
+.input-box input {
+    flex: 1;
+    cursor: pointer;
+    padding: 10px; /* Adjust padding as needed */
+}
+
+
+
+.btn1{
+    position: absolute;
+    top: 210%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 1rem;
+    display: inline-block;
+    padding: 1rem 3rem;
+    font-size: 1.7rem;
+    border-radius: 45rem;
+    border: .2rem solid #000; /* Black border */
+    cursor: pointer;
+    background-color: transparent; /* Transparent background */
+    color: #000;
+}
+
+.social-icons .fab{
+    width:20px;
+    height:30px;
+    text-align: center;
+    line-height: 159px;
+    font-size: 20px;
+    color: rgb(55, 222, 52);
+    margin-left: 10px;
+    margin-bottom: 15px;
+    float: right; 
+    
+}
+
+.copyright{
+    text-align: left;
+    padding-left: 110px;
+}
+.veg {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.veg i {
+    color: rgb(61, 236, 61);
+    font-size: 24px; /* Adjust the size as needed */
+    margin-bottom: 5px; /* Adjust the margin as needed */
+}
+
+.veg h2 {
+    margin-top: 0; /* Adjust the margin-top as needed */
+    margin-bottom: 0px; /* Adjust the margin-bottom as needed */
+}
+
+
+.veg p {
+    margin-top: 10px;
+    font-size: 15px; /* Adjust the margin as needed */
+}
